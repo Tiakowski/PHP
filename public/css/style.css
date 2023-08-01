@@ -1,0 +1,227 @@
+/* CSS global */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  position: relative;
+  background-image: url('../../public/img/background3.png');
+  background-size: cover;
+  
+  
+}
+
+h1, h2, p {
+  font-family: "Verdana", sans-serif;
+}
+
+
+/* ----------------- Tamanho e posicionamento --------------------*/
+
+/* CSS da barra de navegação */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(80,97,233,1) 19%, rgba(94,0,135,1) 79%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbar li:last-child {
+  margin-right: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: rgb(247, 247, 177);
+}
+
+
+/* CSS da tabela */
+
+
+.table {
+  margin-top: 70px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.table th,
+.table td {
+  border: 1px solid #333;
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid #333;
+}
+
+.table th {
+  background-color: #9ba3e2;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tr:hover {
+  background-color: #dbdbdb;
+}
+
+/* CSS para as células de descrição */
+.table td.description-cell {
+  min-width: 20vw;
+  max-width: 20vw;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+/* CSS do link de exclusão */
+.delete-link {
+  color: #b5b8b1;
+  text-decoration: none;
+}
+
+.delete-link:hover {
+  color: rgb(204, 0, 0);
+}
+
+
+/* CSS do link de edição */
+.edit-link {
+  color: #808080;
+  text-decoration: none;
+}
+
+.edit-link:hover {
+  color: rgb(28, 96, 136);
+}
+
+
+/* CSS do ícone de seta */
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon.rotate {
+  transform: rotate(90deg);
+}
+
+.form-fieldset {
+  margin: 90px auto;
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-fieldset label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1px;
+  margin-top: 5px;
+}
+
+.form-fieldset .text-input {
+  width: 400px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.form-fieldset textarea {
+  width: 400px;
+  max-width: 100%;
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #333;
+  resize: vertical;
+}
+
+.form-fieldset button {
+  margin-top: 10px;
+}
+
+/* CSS adicional para os elementos "Data limite" e "Prioridade" */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.flex-container > div {
+  flex: 1;
+  margin: 5px;
+}
+
+.flex-container input[type="date"] {
+  width: 200px;
+  max-width: 100%;
+}
+
+.flex-container select {
+  width: 200px;
+  max-width: 100%;
+  
+}
+
+
+.flex-container .priority-input {
+  width: 200px;
+  max-width: 100%;
+}
+
+.priority-filter{
+  border-radius: 5px;
+  background-color: rgb(231, 231, 231);
+}
+
+
+/* CSS do botão */
+.button {
+  width: 150px;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: darkblue;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+.button:hover {
+  transform: scale(1.01);
+  background-color: rgb(0, 0, 102);
+}
+
+.text-input {
+  border-radius: 5px;
+  border-width: 1px;
+}
+
